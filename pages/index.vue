@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <SiteLogo />
       <h1 class="title">
         yggoo
       </h1>

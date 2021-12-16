@@ -38,4 +38,4 @@ RUN apk --update --no-cache add \
     python3=${python3_version}
 
 RUN npm -g config set user root
-RUN npm install -g npm@6.14.11 create-nuxt-app
+RUN npm install -g npm@8.3.0 create-nuxt-app@4.0.0
