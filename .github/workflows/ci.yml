@@ -17,30 +17,29 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14.15.4]
+        node: [14]
 
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@master
 
       - name: Setup node env 🏗
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2.1.5
         with:
           node-version: ${{ matrix.node }}
+          check-latest: true
 
       - name: Cache node_modules 📦
-        uses: actions/cache@v2.1.7
+        uses: actions/cache@v2.1.4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Install dependencies
-        run: |
-          npm install -g npm@8.3.0
-          npm install
+      - name: Install dependencies 👨🏻‍💻
+        run: npm ci --prefer-offline --no-audit
 
-      - name: Run linter
+      - name: Run linter 👀
         run: npm run lint
 
