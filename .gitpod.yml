@@ -1,0 +1,20 @@
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: false
+    addComment: false
+    addBadge: true
+gitConfig:
+    alias.st: status
+tasks:
+  - name: setup
+    init: |
+      npm install -g npm@8.5.1 @sanity/cli
+      npm instal
+      npm run dev     
+vscode:
+  extensions:
+    - octref.vetur
