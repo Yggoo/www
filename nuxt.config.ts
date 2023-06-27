@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   telemetry: false,
   ssr: true,
+  css: [
+      '@/assets/css/main.css',
+  ],
   app: {
     head: {
       link: [
