@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   telemetry: false,
   ssr: true,
+  nitro: {
+    preset: "cloudflare_pages",
+  },
   css: [
       '@/assets/css/main.css',
   ],
