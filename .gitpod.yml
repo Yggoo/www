@@ -1,20 +1,16 @@
-github:
-  prebuilds:
-    master: true
-    branches: true
-    pullRequests: true
-    pullRequestsFromForks: true
-    addCheck: false
-    addComment: false
-    addBadge: true
-gitConfig:
-    alias.st: status
 tasks:
-  - name: setup
-    init: |
-      npm install -g npm@8.5.1 @sanity/cli
-      npm instal
-      npm run dev     
+  - before: |
+      npm install --location=global npm@latest
+      npm install --location=global typescript@latest
+      curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
+    init: npm install
+    command: npm run dev
+gitConfig:
+  alias.st: status
+  alias.co: checkout
 vscode:
   extensions:
-    - octref.vetur
+    - usernamehw.errorlens
+    - dbaeumer.vscode-eslint
+    - medo64.render-crlf
+    - Vue.volar
