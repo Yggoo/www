@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   telemetry: false,
-  ssr: false,
+  ssr: true,
   app: {
     head: {
       link: [
