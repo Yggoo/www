@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     preset: "cloudflare_pages",
+    esbuild: {
+      options: {
+        target: 'esnext'
+      }
+    }
   },
   css: [
       '@/assets/css/main.css',

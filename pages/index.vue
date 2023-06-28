@@ -45,10 +45,8 @@
       </div>
     </nav>
 
-
-
     <div class="container">
-      Page visits: {{ data }}
+      Random Image: <img :src="data"/>
       <h1>Unlocking Boundless Potential with Yggoo</h1>
       <p>Experience the power of Yggoo, the revolutionary service that transcends boundaries and unleashes unimaginable
         possibilities.</p>
