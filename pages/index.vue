@@ -47,7 +47,6 @@
 
     <div class="container">
       Random Image: <img :src="image"/>
-      <br/>Raw data: {{raw}}
       <h1>Unlocking Boundless Potential with Yggoo</h1>
       <p>Experience the power of Yggoo, the revolutionary service that transcends boundaries and unleashes unimaginable
         possibilities.</p>
@@ -135,7 +134,7 @@
 const unsplash = await useFetch(() =>'/api/hello')
 const image = unsplash?.data?.value?.url
 const raw = unsplash?.data
-
+console.log(raw)
 </script>
 
 <style lang="css" scoped>  .container {
