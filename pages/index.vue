@@ -46,8 +46,8 @@
     </nav>
 
     <div class="container">
-      Random Image: <img :src="data.url"/>
-      <br/>Raw data: {{data.raw}}
+      Random Image: <img :src="data"/>
+      <br/>Raw data: {{data}}
       <h1>Unlocking Boundless Potential with Yggoo</h1>
       <p>Experience the power of Yggoo, the revolutionary service that transcends boundaries and unleashes unimaginable
         possibilities.</p>
