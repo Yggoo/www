@@ -8,8 +8,9 @@ const serverApi = createApi({
   accessKey
 })
 
-const output = await serverApi.photos.getRandom({}) as ApiResponse<Random | Random[]>
 
-export default defineEventHandler((event) => {
+
+export default defineEventHandler(async (event) => {
+  const output = await serverApi.photos.getRandom({}) as ApiResponse<Random | Random[]>
   return (output.response as Random).urls.small
 })
