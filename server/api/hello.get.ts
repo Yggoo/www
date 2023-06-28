@@ -1,5 +1,4 @@
 import { createApi } from 'unsplash-js'
-import { Random } from 'unsplash-js/dist/methods/photos/types'
 
 export default defineEventHandler(async () => {
   const { UNSPLASH_ACCESS_KEY} = useRuntimeConfig()
