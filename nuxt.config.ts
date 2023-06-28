@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   telemetry: false,
   ssr: true,
+  runtimeConfig: {
+    UNSPLASH_ACCESS_KEY: process.env.UNSPLASH_ACCESS_KEY
+  },
   nitro: {
     preset: "cloudflare_pages",
     esbuild: {
