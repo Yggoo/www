@@ -6,5 +6,7 @@ export default defineEventHandler(async () => {
     accessKey: useRuntimeConfig().UNSPLASH_ACCESS_KEY
   })
   const output = await serverApi.photos.getRandom({})
-  return (output.response as Random).urls.small
+  // return (output.response as Random).urls.small
+  const config = useRuntimeConfig()
+  return { key: config.NO_DANGER }
 })

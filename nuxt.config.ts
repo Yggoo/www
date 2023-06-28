@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   telemetry: false,
   ssr: true,
   runtimeConfig: {
-    UNSPLASH_ACCESS_KEY: process.env.UNSPLASH_ACCESS_KEY
+    UNSPLASH_ACCESS_KEY: process.env.UNSPLASH_ACCESS_KEY,
+    NO_DANGER: 'No danger'
   },
   nitro: {
     preset: "cloudflare_pages",
