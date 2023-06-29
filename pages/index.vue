@@ -131,10 +131,8 @@
 </template>
 
 <script setup lang="ts">
-const unsplash = await useFetch(() =>'/api/hello')
-const image = unsplash?.data?.value?.url
-const raw = unsplash?.data
-console.log(raw)
+const unsplash = await useFetch(() =>'/api/photos?id=H7vY4X3nAVY&w=200')
+const image = unsplash.data.value
 </script>
 
 <style lang="css" scoped>  .container {
