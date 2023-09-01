@@ -20,7 +20,7 @@
     "nuxt": "^3.7.0",
     "@nuxt/types": "^2.17.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "unsplash-js": "^7.0.18"
