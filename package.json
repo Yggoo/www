@@ -14,7 +14,7 @@
     "@nuxt/devtools": "latest",
     "@types/node": "^20.11.2",
     "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "@typescript-eslint/parser": "^6.18.1",
+    "@typescript-eslint/parser": "^6.19.0",
     "eslint": "^8.56.0",
     "eslint-plugin-vue": "^9.20.1",
     "nuxt": "^3.9.1",
