@@ -12,7 +12,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240129.0",
     "@nuxt/devtools": "latest",
-    "@types/node": "^20.11.10",
+    "@types/node": "^20.11.13",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": "^6.20.0",
     "eslint": "^8.56.0",
