@@ -10,7 +10,7 @@
     "lintfix": "eslint --ignore-path .gitignore --ext .ts,.js,.vue . --fix"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241018.0",
+    "@cloudflare/workers-types": "^4.20241022.0",
     "@nuxt/devtools": "latest",
     "@types/node": "^22.7.8",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
