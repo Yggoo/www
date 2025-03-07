@@ -13,7 +13,7 @@
     "@cloudflare/workers-types": "^4.20250303.0",
     "@nuxt/devtools": "latest",
     "@types/node": "^22.13.9",
-    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
     "@typescript-eslint/parser": "^8.26.0",
     "eslint": "^9.21.0",
     "eslint-plugin-vue": "^10.0.0",
