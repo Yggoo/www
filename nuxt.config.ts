@@ -3,10 +3,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   telemetry: false,
   ssr: true,
+
   runtimeConfig: {
     UNSPLASH_ACCESS_KEY: process.env.UNSPLASH_ACCESS_KEY,
     NO_DANGER: process.env.NO_DANGER
   },
+
+  vite: {
+    server:{
+      allowedHosts: true
+    }
+  },
+
   nitro: {
     preset: "cloudflare_pages",
     esbuild: {
@@ -15,17 +23,10 @@ export default defineNuxtConfig({
       }
     }
   },
+
   css: [
       '@/assets/css/main.css',
   ],
-  app: {
-    head: {
-      link: [
-        { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' }
-      ],
-      script: [
-        { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', body: true }
-      ]
-    }
-  }
+  compatibilityDate: '2025-04-03',
+  modules: ['usebootstrap']
 })
