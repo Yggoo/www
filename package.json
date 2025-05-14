@@ -21,7 +21,7 @@
     "nuxt": "^3.17.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.32.1",
-    "usebootstrap": "^3.5.105"
+    "usebootstrap": "^3.5.107"
   },
   "dependencies": {
     "unsplash-js": "^7.0.19"
