@@ -10,7 +10,7 @@
     "lintfix": "npx eslint --ignore-pattern node_modules --ignore-pattern .nuxt --ext .ts,.js,.vue . --fix"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^ 4.20250601.0",
+    "@cloudflare/workers-types": "^ 4.20250607.0",
     "@eslint/js": "^9.28.0",
     "@nuxt/devtools": "latest",
     "@nuxt/types": "^2.18.1",
