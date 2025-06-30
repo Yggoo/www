@@ -20,7 +20,7 @@
     "globals": "^16.2.0",
     "nuxt": "^3.17.5",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.34.1",
+    "typescript-eslint": "^8.35.0",
     "usebootstrap": "^3.5.107"
   },
   "dependencies": {
