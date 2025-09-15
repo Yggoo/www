@@ -46,7 +46,7 @@
     </nav>
 
     <div class="container">
-      Random Image: <img :src="image"/>
+      Random Image: <img :src="image" alt="Random image" @error="handleImageError" style="max-width: 200px; height: auto;"/>
       <h1>Unlocking Boundless Potential with Yggoo</h1>
       <p>Experience the power of Yggoo, the revolutionary service that transcends boundaries and unleashes unimaginable
         possibilities.</p>
@@ -131,8 +131,19 @@
 </template>
 
 <script setup lang="ts">
-const unsplash = await useFetch(() =>'/api/photos?id=H7vY4X3nAVY&w=200')
-const image = unsplash.data.value
+const { data: image, error } = await useFetch('/api/photos?id=H7vY4X3nAVY&w=200')
+
+// Handle image loading errors
+const handleImageError = (event: Event) => {
+  const img = event.target as HTMLImageElement
+  console.warn('Failed to load image:', img.src)
+  img.src = 'https://picsum.photos/200/200?random=fallback'
+}
+
+// Log any fetch errors
+if (error.value) {
+  console.error('Error fetching image URL:', error.value)
+}
 </script>
 
 <style lang="css" scoped>  .container {
