@@ -24,6 +24,22 @@ The development server will be available on port 3000 with automatic port forwar
 
 ## Setup
 
+### Environment Variables
+
+Copy the example environment file and configure your API keys:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and add your Unsplash access key:
+- Get your Unsplash access key from [https://unsplash.com/developers](https://unsplash.com/developers)
+- Add it to your `.env` file: `UNSPLASH_ACCESS_KEY=your_key_here`
+
+**Note**: If no Unsplash key is provided, the app will use fallback placeholder images from Lorem Picsum.
+
+### Dependencies
+
 Make sure to install the dependencies:
 
 ```bash
