@@ -24,6 +24,6 @@
     "usebootstrap": "^3.5.107"
   },
   "dependencies": {
-    "unsplash-js": "^7.0.19"
+    "unsplash-js": "^7.0.20"
   }
 }
