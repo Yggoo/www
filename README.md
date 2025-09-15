@@ -2,6 +2,26 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Development Environment
+
+This project uses **Dev Containers** for a consistent development experience. The environment includes:
+
+- **Node.js LTS** with npm
+- **Docker** support (Docker-outside-of-Docker)
+- **TypeScript** and **ESLint** pre-configured
+- **VS Code extensions** for Vue.js, TypeScript, and more
+- **GitHub Actions runner** (act) for local testing
+
+### Getting Started
+
+1. **Gitpod**: Open in Gitpod - the dev container will start automatically
+2. **VS Code**: Use "Dev Containers: Reopen in Container" command
+3. **GitHub Codespaces**: Will automatically use the dev container
+
+The development server will be available on port 3000 with automatic port forwarding.
+
+> **Note**: This project has been migrated from Gitpod Classic (.gitpod.yml) to Dev Containers. See [DEVCONTAINER_MIGRATION.md](./DEVCONTAINER_MIGRATION.md) for details.
+
 ## Setup
 
 Make sure to install the dependencies:

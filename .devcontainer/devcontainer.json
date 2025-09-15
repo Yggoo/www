@@ -1,0 +1,41 @@
+{
+	"name": "Ona - Nuxt.js Development Environment",
+	"build": {
+		"context": ".",
+		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+			"moby": true,
+			"dockerDashComposeVersion": "v2"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"usernamehw.errorlens",
+				"dbaeumer.vscode-eslint",
+				"medo64.render-crlf",
+				"Vue.volar",
+				"ms-vscode.vscode-typescript-next",
+				"bradlc.vscode-tailwindcss",
+				"ms-vscode.vscode-json"
+			],
+			"settings": {
+				"git.defaultCloneDirectory": "/workspaces",
+				"git.enableSmartCommit": true,
+				"git.confirmSync": false,
+				"terminal.integrated.defaultProfile.linux": "bash"
+			}
+		}
+	},
+	"forwardPorts": [3000, 3001, 8080],
+	"postCreateCommand": "npm install",
+	"postStartCommand": {
+		"git-config": "git config --global alias.st status && git config --global alias.co checkout"
+	},
+	"remoteUser": "vscode",
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+	]
+}
