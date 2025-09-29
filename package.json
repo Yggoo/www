@@ -24,7 +24,7 @@
     "usebootstrap": "^3.5.107"
   },
   "dependencies": {
-    "@unocss/nuxt": "^66.5.1",
+    "@unocss/nuxt": "^66.5.2",
     "@unocss/preset-mini": "^66.0.0",
     "@unocss/preset-wind3": "^66.0.0",
     "unocss": "^66.5.1",
